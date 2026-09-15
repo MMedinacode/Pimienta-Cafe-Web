@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pimienta y Café — cafetería en Conchalí, 5,0 ★</title>
+<meta name="description" content="Cafetería Pimienta y Café, Apolo 5804, Conchalí. Sándwich de pollo crispy en ciabatta, completos con pancito casero, mocachino de Nutella y jugos naturales. 5,0 ★ en Google.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#FFE93D">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23141414'/%3E%3Ccircle cx='32' cy='34' r='16' fill='%23FFE93D'/%3E%3Cpath d='M18 22l6-9 5 7zM46 22l-6-9-5 7z' fill='%23FFE93D'/%3E%3C/svg%3E">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CL">
+<meta property="og:site_name" content="Pimienta y Café">
+<meta property="og:title" content="Pimienta y Café — Conchalí, 5,0 ★">
+<meta property="og:description" content="Sándwich de pollo crispy en ciabatta, completos con pancito casero y jugos naturales. Abierto de 7:30 a 15:30 y de 18:00 a 21:00.">
+<meta property="og:url" content="https://mmedinacode.github.io/Pimienta-Cafe-Web/">
+<meta property="og:image" content="https://mmedinacode.github.io/Pimienta-Cafe-Web/fotos/hero-pollo-crispy.jpg">
+<meta property="og:image:alt" content="Sándwich de pollo crispy con palta en ciabatta, en Pimienta y Café">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Inter+Tight:wght@300;400;500;600;700&family=Rock+Salt&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Loader: el trazo de marcador amarillo pasando por encima del nombre,
+     que es lo que hacen las manchas amarillas de su banner. -->
+<div id="loader" class="loader" aria-hidden="true">
+  <p class="loader-txt"><span>Pimienta y Café</span></p>
+  <p class="loader-sub">Apolo 5804 · Conchalí</p>
+</div>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="head">
+  <div class="head-in">
+    <a class="brand" href="#inicio" data-tab="inicio" aria-label="Pimienta y Café, ir al inicio">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><circle cx="16" cy="18" r="9" fill="currentColor"/><path d="M8 11l3-6 3 5zM24 11l-3-6-3 5z" fill="currentColor"/></svg>
+      </span>
+      <span class="brand-txt"><strong>Pimienta y Café</strong><em>Conchalí</em></span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <ul class="nav-links">
+        <li><a href="#inicio"    data-tab="inicio" class="on">Inicio</a></li>
+        <li><a href="#nosotros"  data-tab="nosotros">Nosotros</a></li>
+        <li><a href="#carta"     data-tab="carta">Carta</a></li>
+        <li><a href="#resenas"   data-tab="resenas">Reseñas</a></li>
+        <li><a href="#redes"     data-tab="redes">Redes</a></li>
+        <li><a href="#visitanos" data-tab="visitanos">Visítanos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ══════════════ INICIO ══════════════ -->
+<section class="tab-panel on" data-tab-panel="inicio" id="inicio">
+  <div class="hero">
+    <div class="hero-txt">
+      <p class="eyebrow">Apolo 5804 · Conchalí</p>
+      <h1>Doce reseñas.<br><em>Las doce</em><br>de cinco estrellas.</h1>
+      <p class="hero-lead">
+        Sándwich de pollo crispy en ciabatta, completos con
+        <strong>pancito casero</strong>, mocachino de Nutella y jugos
+        naturales. Con opciones vegetarianas.
+      </p>
+
+      <ul class="sellos" aria-label="Lo que ofrecen">
+        <li>Sándwiches</li>
+        <li>Completos</li>
+        <li>Café</li>
+        <li>Vegetarianos</li>
+      </ul>
+
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="#carta" data-tab="carta">Ver la carta</a>
+        <a class="btn btn-ghost" href="#resenas" data-tab="resenas">Leer las reseñas</a>
+      </div>
+      <p class="hero-open">
+        <span class="dot" id="statusDot" aria-hidden="true"></span>
+        <span data-horario-estado>07:30–15:30 y 18:00–21:00 · sábado y domingo cerrado</span>
+      </p>
+    </div>
+    <figure class="hero-img">
+      <img src="fotos/hero-pollo-crispy.jpg" alt="Sándwich de pollo crispy con palta en pan ciabatta, servido en tabla de madera" fetchpriority="high" decoding="async">
+      <figcaption class="hero-cap">Ave palta con pollo crispy, en ciabatta</figcaption>
+    </figure>
+  </div>
+
+  <div class="wrap">
+    <div class="cifras reveal stagger">
+      <div><b data-contar>5,0</b><span>★ en Google</span></div>
+      <div><b data-contar>12</b><span>reseñas, todas 5★</span></div>
+      <div><b>07:30</b><span>abrimos</span></div>
+      <div><b>21:00</b><span>cerramos</span></div>
+    </div>
+
+    <!-- El horario partido es el dato que más se pierde en una ficha de
+         Google. Va grande y arriba, no en letra chica. -->
+    <div class="avisohorario reveal">
+      <h3>Ojo: cerramos en la tarde</h3>
+      <div class="franjas-hero">
+        <div><b>07:30 – 15:30</b><span>mañana y almuerzo</span></div>
+        <div class="franjas-cierre" aria-hidden="true">cerrado</div>
+        <div><b>18:00 – 21:00</b><span>la once</span></div>
+      </div>
+      <p>De lunes a viernes. <b>Sábado y domingo cerrado.</b></p>
+    </div>
+
+    <div class="tri reveal stagger">
+      <article class="tri-card">
+        <h3>El pollo crispy</h3>
+        <p>“Prueben el sándwich de Ave Palta con pollo crispy en ciabatta,
+           <strong>no se arrepentirán</strong>”, dice una Local Guide.</p>
+        <a href="#carta" data-tab="carta" class="lnk">Ver la carta →</a>
+      </article>
+      <article class="tri-card">
+        <h3>Pancito casero</h3>
+        <p>“Muy buenos completos con <strong>pancito casero</strong>. El
+           ambiente es piola, buena música.”</p>
+        <a href="#resenas" data-tab="resenas" class="lnk">Leer reseñas →</a>
+      </article>
+      <article class="tri-card">
+        <h3>Contestamos siempre</h3>
+        <p>El dueño responde <strong>todas</strong> las reseñas, una por
+           una. “¡Te esperamos pronto nuevamente!”</p>
+        <a href="#redes" data-tab="redes" class="lnk">Ver la ficha →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ NOSOTROS ══════════════ -->
+<section class="tab-panel" data-tab-panel="nosotros" id="nosotros">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Nosotros</p>
+      <h2>Una cafetería<br>con gatos<br>en el letrero</h2>
+      <p class="sec-lead">
+        Mesas negras, tablas de madera y mucho amarillo.
+      </p>
+    </header>
+
+    <div class="split reveal">
+      <figure class="split-img">
+        <img src="fotos/banner-marca.jpg" alt="Letrero de Cafetería Pimienta y Café, con una franja de gatos ilustrados en amarillo" loading="lazy" decoding="async">
+        <figcaption>Su propio letrero</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>De ahí salen los colores</h3>
+        <p>
+          El letrero del local es blanco sobre negro, y debajo lleva una
+          franja de <strong>gatos dibujados en amarillo</strong>. Ese
+          amarillo limón es el que se repite en todo lo demás: las tablas
+          en que sirven, las botellas de salsa, los posavasos.
+        </p>
+        <p>
+          Esta página usa exactamente esos dos colores, muestreados de esa
+          foto. Nada inventado.
+        </p>
+      </div>
+    </div>
+
+    <div class="split split-rev reveal">
+      <figure class="split-img">
+        <img src="fotos/mesa-compartida.jpg" alt="Cuatro completos servidos en tablas de madera sobre una mesa negra" loading="lazy" decoding="async">
+        <figcaption>Una mesa completa</figcaption>
+      </figure>
+      <div class="split-txt">
+        <h3>“El ambiente es piola, buena música”</h3>
+        <blockquote class="cita">
+          “Muy buenos completos con pancito casero. El ambiente es piola,
+          buena música y además cuentan con opciones vegetarianas, lo que
+          se agradece siempre.”
+          <cite>C M, en Google</cite>
+        </blockquote>
+        <p>
+          Y otra clienta, hace seis días: <em>“el espacio es cómodo y
+          tranquilo para comerse cualquier cosa ya que todo es bueno”</em>.
+        </p>
+        <a href="#carta" data-tab="carta" class="lnk">Ver todo lo que hay →</a>
+      </div>
+    </div>
+
+    <div class="gal reveal stagger">
+      <figure><img src="fotos/hero-pollo-crispy.jpg" alt="Sándwich de pollo crispy en ciabatta" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/completos-mesa.jpg" alt="Completos servidos en tablas de madera" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/cafe-helado.jpg" alt="Café helado en vaso alto" loading="lazy" decoding="async"></figure>
+      <figure><img src="fotos/mesa-compartida.jpg" alt="Mesa con completos y salsas" loading="lazy" decoding="async"></figure>
+    </div>
+    <p class="note">Todas las fotos son del propio local, de su ficha de Google Maps.</p>
+  </div>
+</section>
+
+<!-- ══════════════ CARTA ══════════════ -->
+<section class="tab-panel" data-tab-panel="carta" id="carta">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Carta</p>
+      <h2>Lo que hay</h2>
+      <p class="sec-lead">
+        Todo esto está <b>nombrado textualmente en sus reseñas</b> o se ve
+        en sus fotos.
+      </p>
+    </header>
+
+    <div class="aviso reveal">
+      <strong>Sobre los precios:</strong> Pimienta y Café no publica ninguno
+      — ni carta fotografiada, ni menú digital, ni redes. Así que acá todo
+      va sin precio, en vez de con uno inventado. Google estima
+      <b>$5.000 a $10.000 por persona</b>.
+    </div>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Sándwiches y completos</h3>
+        <span class="carta-bloque-n">3 opciones</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item">
+          <img src="fotos/hero-pollo-crispy.jpg" alt="Sándwich de pollo crispy en ciabatta" loading="lazy" decoding="async">
+          <div><h4>Ave palta con pollo crispy, en ciabatta</h4><p>“No se arrepentirán”, dice la reseña que lo recomienda.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/completos-mesa.jpg" alt="Completos en tabla de madera" loading="lazy" decoding="async">
+          <div><h4>Completos con pancito casero</h4><p>El pan lo hacen ellos. Se sirven en tabla.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Opciones vegetarianas</h4><p>“Cuentan con opciones vegetarianas, lo que se agradece siempre.”</p></div><span class="price">Consultar</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Cafetería</h3>
+        <span class="carta-bloque-n">4 opciones</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Mocachino de Nutella</h4><p>“Lo mejor”, según una Local Guide con 19 fotos.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Chocolate caliente</h4><p>“Exquisito, espesito.” Es el adjetivo que usa la reseña.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item">
+          <img src="fotos/cafe-helado.jpg" alt="Café helado" loading="lazy" decoding="async">
+          <div><h4>Café helado</h4><p>En vaso alto. Se ve en una de sus fotos.</p></div>
+          <span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Café</h4><p>“Tanto el café como los batidos están bien preparados.”</p></div><span class="price">Consultar</span></article>
+      </div>
+    </section>
+
+    <section class="carta-bloque reveal">
+      <header class="carta-bloque-head">
+        <h3>Para tomar frío</h3>
+        <span class="carta-bloque-n">2 opciones</span>
+      </header>
+      <div class="menu reveal stagger">
+        <article class="menu-item"><div><h4>Jugos naturales</h4><p>“Sus jugos naturales un 20/10”, dice la reseña más reciente.</p></div><span class="price">Consultar</span></article>
+        <article class="menu-item"><div><h4>Batidos</h4><p>Nombrados junto al café, “bien preparados”.</p></div><span class="price">Consultar</span></article>
+      </div>
+    </section>
+
+    <p class="note">
+      Productos confirmados en sus reseñas de Google y en sus propias fotos.
+      Conviene confirmar precios y disponibilidad en el local.
+    </p>
+    <!--
+      ⚠️ PLACEHOLDER MARCADO — NINGÚN PRECIO CONSTA.
+      No publican carta con valores en ninguna parte. Todo va "Consultar"
+      a propósito.
+    -->
+  </div>
+</section>
+
+<!-- ══════════════ RESEÑAS ══════════════ -->
+<section class="tab-panel" data-tab-panel="resenas" id="resenas">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Reseñas</p>
+      <h2>5,0 ★ · 12 reseñas</h2>
+      <p class="sec-lead">Las doce son de cinco estrellas. Copiadas tal cual de su ficha.</p>
+    </header>
+
+    <div class="revs reveal stagger">
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>Todo muy rico, un chocolate caliente exquisito espesito y el mocachino de Nutella lo mejor! Prueben el sándwich de Ave Palta con pollo crispy en ciabatta, no se arrepentirán</p>
+        <footer><b>geraldine alexandra caamaño gonzalez</b><span>Local Guide · 7 reseñas · 19 fotos</span></footer>
+        <!-- La respuesta del propietario es real, copiada textual de la ficha. -->
+        <div class="respuesta">
+          <b>Respuesta del local</b>
+          <p>¡Muchas gracias! 😊 Qué bueno saber que disfrutaste la comida, el café y la atención. ¡Te esperamos pronto nuevamente!</p>
+        </div>
+      </blockquote>
+
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>muy buenos completos con pancito casero 🙏🏼 el ambiente es piola, buena música y además cuentan con opciones vegetarianas, lo que se agradece siempre. Tanto el café como los batidos están bien preparados.</p>
+        <footer><b>C M</b><span>3 reseñas · 1 foto</span></footer>
+        <div class="respuesta">
+          <b>Respuesta del local</b>
+          <p>Muchas gracias 😁. Los esperamos nuevamente.</p>
+        </div>
+      </blockquote>
+
+      <blockquote class="rev">
+        <p class="stars" aria-label="5 de 5 estrellas">★★★★★</p>
+        <p>10/10 la verdad muy amables, el espacio es cómodo y tranquilo para comerse cualquier cosa ya que todo es bueno, sus jugos naturales un 20/10 ⭐️⭐️⭐️⭐️⭐️</p>
+        <footer><b>MARIA CAMILA SANCHEZ LARRAHONDO</b><span>2 reseñas · hace 6 días</span></footer>
+      </blockquote>
+    </div>
+
+    <div class="aviso reveal">
+      <strong>Un detalle que dice mucho:</strong> el dueño <b>responde todas
+      las reseñas</b>, una por una, con nombre y emoji. Y la última reseña
+      es <b>de hace seis días</b>: el local está vivo y sumando.
+    </div>
+
+    <div class="rev-cta reveal">
+      <a class="btn btn-solid" href="https://search.google.com/local/reviews?placeid=ChIJb1r5TmXHYpYRcqo9d6YNjfA" target="_blank" rel="noopener">Leer las 12 reseñas</a>
+      <a class="btn btn-ghost" href="https://search.google.com/local/writereview?placeid=ChIJb1r5TmXHYpYRcqo9d6YNjfA" target="_blank" rel="noopener">Dejar una reseña</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ REDES ══════════════ -->
+<section class="tab-panel" data-tab-panel="redes" id="redes">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Redes</p>
+      <h2>Dónde escribirnos</h2>
+      <p class="sec-lead">Sólo lo verificado. Ningún perfil inventado.</p>
+    </header>
+
+    <div class="redes">
+      <article class="red-card reveal">
+        <a class="red-card-head" href="https://wa.me/56958494408" target="_blank" rel="noopener">
+          <span class="red-logo red-logo-wsp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.82 9.82 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/></svg></span>
+          <span class="red-card-txt">
+            <b>+56 9 5849 4408</b>
+            <em>El número de su ficha de Google</em>
+          </span>
+          <span class="red-card-cta">Escribir →</span>
+        </a>
+        <a class="red-grid" href="https://wa.me/56958494408" target="_blank" rel="noopener"
+           data-cta="Escribir por WhatsApp" aria-label="Escribir a Pimienta y Café por WhatsApp">
+          <figure><img src="fotos/hero-pollo-crispy.jpg" alt="Sándwich de pollo crispy" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/completos-mesa.jpg" alt="Completos en tabla" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/cafe-helado.jpg" alt="Café helado" loading="lazy" decoding="async"></figure>
+        </a>
+        <p class="red-pie">Por acá se piden los <b>retiros en la puerta</b> y el delivery.</p>
+      </article>
+
+      <article class="red-card reveal">
+        <a class="red-card-head" href="https://www.google.com/maps/search/?api=1&query=Cafeteria%20Pimienta%20y%20Caf%C3%A9&query_place_id=ChIJb1r5TmXHYpYRcqo9d6YNjfA" target="_blank" rel="noopener">
+          <span class="red-logo red-logo-map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0C7.31 0 3.5 3.81 3.5 8.5c0 6.38 8.5 15.5 8.5 15.5s8.5-9.12 8.5-15.5C20.5 3.81 16.69 0 12 0zm0 11.6a3.1 3.1 0 110-6.2 3.1 3.1 0 010 6.2z"/></svg></span>
+          <span class="red-card-txt">
+            <b>Ficha en Google Maps</b>
+            <em>5,0 ★ · 12 reseñas</em>
+          </span>
+          <span class="red-card-cta">Abrir →</span>
+        </a>
+        <a class="red-grid" href="https://www.google.com/maps/search/?api=1&query=Cafeteria%20Pimienta%20y%20Caf%C3%A9&query_place_id=ChIJb1r5TmXHYpYRcqo9d6YNjfA" target="_blank" rel="noopener"
+           data-cta="Ver la ficha" aria-label="Abrir la ficha de Pimienta y Café en Google Maps">
+          <figure><img src="fotos/mesa-compartida.jpg" alt="Mesa con completos" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/banner-marca.jpg" alt="Letrero del local" loading="lazy" decoding="async"></figure>
+          <figure><img src="fotos/hero-pollo-crispy.jpg" alt="Sándwich en tabla" loading="lazy" decoding="async"></figure>
+        </a>
+        <p class="red-pie"><b>Contestan todas las reseñas</b>, una por una.</p>
+      </article>
+    </div>
+
+    <!--
+      ⚠️⚠️ ADVERTENCIA IMPORTANTE PARA EL OUTREACH ⚠️⚠️
+      @pimientaycafe EXISTE en Instagram pero NO es este local: es un
+      restaurante de comida típica COLOMBIANA en Bogotá (su bio dice
+      "Carrera 3 Num: 9-27 Bogotá Centro", 78 seguidores). Verificado el
+      15-09-2026. NO escribirle. No se encontró ninguna red social
+      verificable de la cafetería de Conchalí.
+    -->
+    <div class="aviso aviso-ojo reveal">
+      <strong>Lo que hoy no tienen:</strong> ninguna red social ni sitio
+      web. Su único canal en internet es su ficha de Google — que cuidan
+      bien, pero que no les deja mostrar la carta, los precios ni el
+      horario partido. <b>Un local con 5,0 limpio merece más que eso.</b>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ VISÍTANOS ══════════════ -->
+<section class="tab-panel" data-tab-panel="visitanos" id="visitanos">
+  <div class="wrap">
+    <header class="sec-head reveal">
+      <p class="eyebrow">Visítanos</p>
+      <h2>Apolo 5804</h2>
+    </header>
+
+    <div class="visit reveal">
+      <div class="visit-info">
+        <div class="vblock">
+          <h3>Dirección</h3>
+          <p>Apolo 5804<br>Conchalí, Región Metropolitana</p>
+          <p class="sub">Plus Code J8G4+7H</p>
+        </div>
+
+        <div class="vblock">
+          <h3>Horario</h3>
+          <p class="estado"><span class="dot" aria-hidden="true"></span><span data-horario-estado>07:30–15:30 y 18:00–21:00</span></p>
+          <ul class="horario horario-semana" id="horario-lista" data-horario-semana>
+            <li data-dia="1"><span>Lunes</span><b>07:30 – 15:30 · 18:00 – 21:00</b></li>
+            <li data-dia="2"><span>Martes</span><b>07:30 – 15:30 · 18:00 – 21:00</b></li>
+            <li data-dia="3"><span>Miércoles</span><b>07:30 – 15:30 · 18:00 – 21:00</b></li>
+            <li data-dia="4"><span>Jueves</span><b>07:30 – 15:30 · 18:00 – 21:00</b></li>
+            <li data-dia="5"><span>Viernes</span><b>07:30 – 15:30 · 18:00 – 21:00</b></li>
+            <li data-dia="6"><span>Sábado</span><b class="cerrado">Cerrado</b></li>
+            <li data-dia="0"><span>Domingo</span><b class="cerrado">Cerrado</b></li>
+          </ul>
+          <p class="sub">
+            <b>Cerramos entre las 15:30 y las 18:00.</b> Según su ficha de
+            Google, consultada el 15-09-2026.
+          </p>
+        </div>
+
+        <div class="vblock">
+          <h3>Contacto</h3>
+          <a class="vtel" href="https://wa.me/56958494408" target="_blank" rel="noopener">
+            <span class="vtel-ico" style="background:#25D366" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.82 9.82 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/></svg></span>
+            <span class="vtel-txt">
+              <b>+56 9 5849 4408</b>
+              <em>WhatsApp · el número de su ficha</em>
+            </span>
+            <span class="vtel-flecha" aria-hidden="true">→</span>
+          </a>
+        </div>
+
+        <div class="vblock">
+          <h3>Cómo se puede pedir</h3>
+          <ul class="vpedir">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v2H3V5zm2 4h14l-1 5h-4v6h-2v-6H6L5 9zm-1 12h16v2H4v-2z"/></svg> Consumo en el lugar</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7V6a6 6 0 1112 0v1h3v14a2 2 0 01-2 2H5a2 2 0 01-2-2V7h3zm2 0h8V6a4 4 0 10-8 0v1z"/></svg> Retiros en la puerta</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h11v9H3V6zm12 3h3.5L21 12.5V15h-6V9zM6.5 20a2 2 0 110-4 2 2 0 010 4zm11 0a2 2 0 110-4 2 2 0 010 4z"/></svg> Entrega a domicilio</li>
+          </ul>
+          <p class="sub">
+            Servicios declarados en su ficha de Google. Los tres se
+            coordinan <b>por WhatsApp</b>.
+          </p>
+        </div>
+
+        <div class="vblock vblock-cta">
+          <a class="btn btn-solid" href="https://www.google.com/maps/dir/?api=1&destination=Cafeteria%20Pimienta%20y%20Caf%C3%A9%20Conchal%C3%AD&destination_place_id=ChIJb1r5TmXHYpYRcqo9d6YNjfA" target="_blank" rel="noopener">Cómo llegar</a>
+          <a class="btn btn-ghost" href="https://waze.com/ul?ll=-33.374337,-70.6935963&navigate=yes" target="_blank" rel="noopener">Ir con Waze</a>
+        </div>
+      </div>
+
+      <div class="visit-map">
+        <!-- ⚠️ SIN loading="lazy": vive en pestaña display:none y no cargaría. -->
+        <iframe
+          title="Mapa de Pimienta y Café en Apolo 5804, Conchalí"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330!2d-70.6935963!3d-33.374337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c7654ef95a6f%3A0xf08d0da6773daa72!2sCafeteria%20Pimienta%20y%20Caf%C3%A9!5e0!3m2!1ses!2scl!4v1757900000000!5m2!1ses!2scl"
+          width="100%" height="100%" style="border:0" allowfullscreen=""
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Flotantes. Derecha = contacto: sólo WhatsApp (su número real de la
+     ficha). NO se pone Instagram: @pimientaycafe existe pero es de un
+     restaurante colombiano en Bogotá, no de este local. Izquierda vacía:
+     no tienen plataforma de delivery, lo coordinan por WhatsApp. -->
+<div class="float float-right">
+  <a class="fab fab-wsp" href="https://wa.me/56958494408" target="_blank" rel="noopener"
+     data-label="WhatsApp" aria-label="Escribir a Pimienta y Café por WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884a9.82 9.82 0 016.988 2.896 9.82 9.82 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.82 11.82 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.88 11.88 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.82 11.82 0 00-3.48-8.413Z"/></svg></a>
+  <button class="fab fab-top" id="toTop" data-label="Volver arriba" aria-label="Volver arriba"
+    style="background:var(--negro);color:var(--limon)"><span aria-hidden="true">↑</span></button>
+</div>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <p class="foot-brand">Pimienta y Café</p>
+      <p>Apolo 5804 · Conchalí</p>
+      <p data-horario-resumen>Lun a Vie 07:30–15:30 y 18:00–21:00 · Sáb y Dom cerrado</p>
+      <p><a href="https://wa.me/56958494408" target="_blank" rel="noopener">+56 9 5849 4408</a></p>
+    </div>
+    <div class="foot-demo">
+      <p><strong>Esta es una demo.</strong> No es el sitio oficial de Pimienta y Café.</p>
+      <p>Hecha con datos públicos reales de su ficha de Google Maps
+         (verificados el 15-09-2026) para mostrarle al local cómo se vería
+         su página web.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* horario.js parte el texto por " y ", así que soporta el horario partido
+   sin tocar nada: calcula bien las dos ventanas del día. */
+window.HORARIO = {
+  dias: ["07:30 - 15:30 y 18:00 - 21:00","07:30 - 15:30 y 18:00 - 21:00",
+         "07:30 - 15:30 y 18:00 - 21:00","07:30 - 15:30 y 18:00 - 21:00",
+         "07:30 - 15:30 y 18:00 - 21:00","Cerrado","Cerrado"],
+  fuente: "Ficha de Google Maps, 15-09-2026"
+};
+/* Sin window.REDES a propósito: no tienen ninguna red social verificable.
+   @pimientaycafe es de un restaurante colombiano en Bogotá, no de ellos. */
+</script>
+
+<script src="script.js"></script>
+<script src="vida.js"></script>
+<script src="carta-fotos.js"></script>
+<script src="carrito.js"></script>
+<script src="horario.js"></script>
+<script src="redes.js"></script>
+</body>
+</html>
