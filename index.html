@@ -508,8 +508,32 @@ window.HORARIO = {
          "07:30 - 15:30 y 18:00 - 21:00","Cerrado","Cerrado"],
   fuente: "Ficha de Google Maps, 15-09-2026"
 };
-/* Sin window.REDES a propósito: no tienen ninguna red social verificable.
-   @pimientaycafe es de un restaurante colombiano en Bogotá, no de ellos. */
+/* ✅ CORREGIDO 16-09-2026 — SÍ TIENEN INSTAGRAM.
+   Antes acá decía que no tenían ninguna red verificable. El error venía de
+   haber buscado @pimientaycafe, que es un restaurante colombiano en Bogotá
+   y NO es de ellos. Matías encontró el real: @pimientaycafe_chile, con el
+   "_chile" al final. La bio calza con el local (cafetería de especialidad,
+   horarios, y un enlace wa.me/message/65L2QXIMAJRJH1 a su WhatsApp).
+
+   ⚠️ NO USAR SU LOGO DE INSTAGRAM: decisión de Matías, el círculo amarillo
+   que tienen ahí es más pobre que la identidad de este sitio.
+
+   ⚠️ EL HORARIO NO CALZA CON EL DE GOOGLE — esto es material de MENSAJE,
+   no va escrito en la página:
+       Google (lo que está abajo):  07:30–15:30  y  18:00–21:00
+       Su bio de Instagram:         07:30–15:00  y  19:00–21:30
+   La diferencia de la tarde es de UNA HORA ENTERA. Quien mire Google llega
+   a las 18:00 y se encuentra cerrado. Se deja el de Google porque es la
+   fuente que se verificó, y se le pregunta a ellos cuál es el bueno. */
+window.REDES = {
+  intro: "Publican ahí sus horarios, sus desayunos y las fotos de sus clientes.",
+  instagram: {
+    user: "pimientaycafe_chile",
+    seguidores: "345",
+    nota: "Su bio se describe como cafetería de especialidad, con toques dulces y salados.",
+    fotos: ["fotos/cafe-helado.jpg", "fotos/completos-mesa.jpg", "fotos/mesa-compartida.jpg"]
+  }
+};
 </script>
 
 <script src="script.js"></script>
